@@ -13,3 +13,6 @@ with open('raw_headers.txt', 'r') as header_file:
 
 # XPath selectors for profile analysis
 LAST_4_WEEKS_ACTIVITIES_XPATH = '//div[@class = "activity-count"]/*/span[@class = "count"]'
+
+# XPath selector for href of last activity
+LAST_ACTIVITY_XPATH = '//a[@class = "minimal" and not(ancestor::ul)]/@href'
